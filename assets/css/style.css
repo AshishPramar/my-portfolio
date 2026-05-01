@@ -597,21 +597,26 @@ main {
   background: var(--bg-gradient-onyx);
   border-radius: 14px;
   box-shadow: var(--shadow-1);
+  
+}
+.testimonials-avatar-box .linkedin-btn {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  background: #0077b5;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.testimonials-avatar-box .linkedin-btn ion-icon {
+  color: white !important;
+  font-size: 10px;
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
-
-.testimonials-text {
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
-  line-height: 1.6;
-  display: -webkit-box;
-  line-clamp: 4;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
 
 
 /**
@@ -1443,6 +1448,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .testimonials-text {
     line-clamp: 2;
     -webkit-line-clamp: 2;
+    color: var(--light-gray) !important;
   }
 
   /* testimonials modal */
